@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Laboratorio_03</string>
+    <string name="cash_counter_text">0</string>
+    <string name="quarter_text">$0.25</string>
+    <string name="five_cents_text">$0.05</string>
+    <string name="ten_cents_text">$0.10</string>
+    <string name="one_dollar">$1</string>
+</resources>
