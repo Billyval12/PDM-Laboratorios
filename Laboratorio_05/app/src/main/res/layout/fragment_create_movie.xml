@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLayout"
+    tools:context=".CreateMovieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:text="New Movie"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="@dimen/big_gap"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:background="@color/cardLayout"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input_layout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="@dimen/big_gap"
+        app:layout_constraintEnd_toEndOf="@+id/name_input_layout"
+        android:hint="Category"
+        android:textColorHint="@color/white"
+        android:background="@color/cardLayout"
+        app:layout_constraintStart_toStartOf="@+id/name_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/name_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_value2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input_layout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="@dimen/big_gap"
+        android:hint="Description"
+        android:textColorHint="@color/white"
+        android:background="@color/cardLayout"
+        app:layout_constraintEnd_toEndOf="@+id/name_input_layout2"
+        app:layout_constraintStart_toStartOf="@+id/name_input_layout2"
+        app:layout_constraintTop_toBottomOf="@+id/name_input_layout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_value3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input_layout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="@dimen/big_gap"
+        android:background="@color/cardLayout"
+        android:hint="Calification"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/name_input_layout3"
+        app:layout_constraintStart_toStartOf="@+id/name_input_layout3"
+        app:layout_constraintTop_toBottomOf="@+id/name_input_layout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_value4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_input_layout4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
