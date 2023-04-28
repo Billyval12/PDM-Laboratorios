@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundLayout"
-    tools:context=".CreateMovieFragment">
+    tools:context=".ui.movie.CreateMovieFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -63,7 +63,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name_input_layout3"
+        android:id="@+id/category_value"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="300dp"
         android:layout_height="75dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/name_input_layout2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_value3"
+            android:id="@+id/description_value"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -91,19 +91,19 @@
         android:background="@color/cardLayout"
         android:hint="Calification"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/name_input_layout3"
-        app:layout_constraintStart_toStartOf="@+id/name_input_layout3"
-        app:layout_constraintTop_toBottomOf="@+id/name_input_layout3">
+        app:layout_constraintEnd_toEndOf="@+id/category_value"
+        app:layout_constraintStart_toStartOf="@+id/category_value"
+        app:layout_constraintTop_toBottomOf="@+id/category_value">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_value4"
+            android:id="@+id/calification_value"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="submit"
