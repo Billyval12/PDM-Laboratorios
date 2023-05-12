@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Laboratorio05PDM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_tittle">Billboard</string>
+    <string name="movie_tittle1">Star Wars episodio 3: La venganza de los Sith</string>
+    <string name="movie_rate1">9.8</string>
+    <string name="fragment_tittle3">Nueva película</string>
+    <string name="name_editText">Nombre</string>
+    <string name="categorie_editText">Categoría</string>
+    <string name="desc_editText">Descripción</string>
+    <string name="rate_editText">Valoración</string>
+    <string name="submit_button_text">Publicar</string>
+    <string name="movie_tag">Ciencia ficción</string>
+    <string name="movie_desc">La película se centra en el personaje de Anakin Skywalwer, quién está siendo tentado por el Lado Oscuro de la Fuerza mientras el Imperio Galáctico comienza a surgir. La trama también muestra la caida de la República Galáctica y el ascenso del Emperador Palpatine</string>
+    <string name="second_movie">Harry Potter y la piedra filosofal</string>
+    <string name="text_button1">Agregar pelicula</string>
+</resources>

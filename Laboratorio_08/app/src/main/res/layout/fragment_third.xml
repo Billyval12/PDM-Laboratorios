@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.laboratorio05pdm.ui.movie.viewmodel.MovieViewModel"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ui.movie.ThirdFragment"
+        android:background="@color/backgroundLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/fragment_tittle3"
+                android:textSize="@dimen/tittle_size"
+
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_size"
+                android:background="@color/cardLayout"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="@string/name_editText"
+                android:textColorHint="@color/white"
+                android:text="@={viewmodel.name}"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/categorie_editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_size"
+                android:background="@color/cardLayout"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="@string/categorie_editText"
+                android:textColorHint="@color/white"
+                android:text="@={viewmodel.category}"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_editText" />
+
+            <EditText
+                android:id="@+id/description_editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_size"
+                android:background="@color/cardLayout"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="@string/desc_editText"
+                android:textColorHint="@color/white"
+                android:text="@={viewmodel.descrption}"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categorie_editText" />
+
+            <EditText
+                android:id="@+id/rate_editText"
+                android:background="@color/cardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_size"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="@string/rate_editText"
+                android:textColorHint="@color/white"
+                android:text="@={viewmodel.qualification}"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_editText" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="@{() -> viewmodel.createMovie()}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/black"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/submit_button_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rate_editText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</layout>

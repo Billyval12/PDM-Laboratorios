@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.laboratorio05pdm.ui.movie.viewmodel.MovieViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundLayout"
+        tools:context=".ui.movie.secondFragment">
+
+        <TextView
+            android:id="@+id/movie_rate2.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="28dp"
+            android:text="@={viewmodel.qualification}"
+            android:textSize="23sp"
+            android:textColor="#008000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_tittle2.1" />
+
+        <TextView
+            android:id="@+id/movie_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="25dp"
+            android:text="@={viewmodel.category}"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/movie_rate2.1"
+            app:layout_constraintTop_toBottomOf="@+id/movie_tittle2.1" />
+
+        <ImageView
+            android:id="@+id/movie_image2.1"
+            android:layout_width="228dp"
+            android:layout_height="203dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/imagen_carga_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/movie_tittle2.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="@={viewmodel.name}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_image2.1" />
+
+        <TextView
+            android:id="@+id/movie_descp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="@={viewmodel.descrption}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_rate2.1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
